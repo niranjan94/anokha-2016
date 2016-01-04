@@ -12,42 +12,580 @@
           content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 </head>
 <body>
-<div class="wrapper">
-    <div class="main">
+<section class="gradientbg">
+        <i id="nav-icon" class="fa fa-bars animated slideInLeft" data-toggle="modal" data-target="#mainmenu"></i>
 
-        <section class="page1">
-            <div class="page_container">
-                <p style="margin-top:-100px; color:#159FD0; font-weight: normal ; font-size:25px; margin-top:-50px; margin-left:-1025px; padding-bottom:0px;">
-                    February 18,19,20</p>
+        <div id="mainmenu" class="custmodal modal fade" role="dialog">
+            <div class="custmodal-dialog modal-dialog">
+                <div class="custmodal-content modal-content">
+                    <div class="custmodal-body modal-body" style="height: 100%;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <ul class="menu">
+                            <li><a href="https://anokha.amrita.edu/"><span class="animation-element1"> HOME </span></a>
+                            </li>
+                            <li><span class="animation-element1" id="schedule"> SCHEDULE </span></li>
+                            <li><span class="animation-element1" id="sponsors"> SPONSORS </span></li>
+                            <li><span class="animation-element1" id="transport"> TRAVEL INFO </span></li>
+                            <li><span class="animation-element1" id="contacts"> CONTACT US </span></li>
+                        </ul>
+                        <div class="container2">
+                            <div class="schedule">
+                                <p>Anokha 2016 is to take place on 18, 19 and 20 February 2016.</p>
 
-                <div style="margin-top:-90px; margin-left:-280px;padding-bottom:20px;padding-top:10px">
-                    <img src="/assets/images/public/logo.png" alt="Anokha" height=50px width=50px>
+                                <p>The complete schedule will be updated here soon.</p>
+
+                                <div id="countdown"></div>
+                                to go.
+                            </div>
+                            <div class="transport">
+                                <p><strong>By Air </strong>: The closest airport is in Coimbatore, located about 27
+                                    kilometers from the campus. Most airlines
+                                    operate flights to Coimbatore from all major cities in India. </p>
+
+                                <p><strong>By Bus</strong>: The nearest major bus terminals are at Gandhipuram (about 22
+                                    kms) and Ukkadam (about 18 kms).
+                                    There are regular bus services from Gandhipuram (Bus Nos. 96, A3 and 3G) and Ukkadam
+                                    (Bus Nos. 96, 48, S2, 3G and A3).
+                                    Alight at Ettimadai Piruvu Bus Stop (Amrita College) and hire an auto rickshaw to
+                                    the
+                                    campus (3 kms). A3 bus will come upto
+                                    the University Gate. The travel time from Ukkadam to Ettimadai Piruvu is around 45
+                                    minutes.</p>
+
+                                <p>Ettimadai is a request stop for all Kerala and Tamil Nadu State Transport buses from
+                                    Kerala. Alight at Ettimadai
+                                    Piruvu Bus Stop (Amrita College) and hire an auto rickshaw to the campus (3 kms).
+                                    Travel
+                                    time from Palakkad to Ettimadai
+                                    Piruvu is around one hour.</p>
+
+                                <p><strong>By Train</strong>: Passenger trains are available from Coimbatore Railway
+                                    Station
+                                    and Palghat Railway Station.
+                                    Ettimadai Railway Station is only about 500 metres from the campus and one may
+                                    easily
+                                    walk to campus upon alighting at
+                                    the station.</p>
+
+                                <a href="../Anokha 2016 - Travel Info.pdf">Download Bus and Train Schedule</a>
+
+                            </div>
+                            <div class="sponsors">
+                                <p>Coming soon.</p>
+
+                                <p id="bottomtxt"><strong>If you are interested in sponsoring us, please
+                                        contact</strong><br>C. Arun Agoram<br>+91 9489815757<br>arunagoram@gmail.com</p>
+                            </div>
+                            <div class="contacts">
+                                <strong>Niranjan R.</strong><br>
+                                <i>Chair, Technical Committees</i><br>
+
+                                <p>+91 9600514966</p><br>
+
+                                <strong>Aravind C.</strong><br>
+                                <i>Chair, Organising Committees</i><br>
+
+                                <p>+91 9444761014</p><br>
+
+                                <p style="margin-top:36%;">For queries, mail us at <strong>anokha@cb
+                                        .amrita.edu.</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <h1 style="font-family: spincycle; color:#444;">anokha 2016</h1>
-
-                <h2>National Level Technical Fest</h2>
             </div>
-            <div style="position: absolute; top: 0; right: 20px; z-index: 10;">
-                <img src="/assets/images/public/univ-logo.png" alt="Amrita Viswa Vidyapeetham">
-            </div>
-            <div style="margin-TOP: 190px;">
-                <br>
-                <br><br><br><br><br><br><br><br>
+        </div>
+        <span class="top-panel hvr-sweep-to-right animated slideInRight" data-toggle="modal" data-target="#logreg"
+              style="">LOGIN/REGISTER </span>
 
-                <div id="countdown"></div>
-                <p id="note"></p>
-                <br><br><br>
+        <div id="logreg" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="about modal-content">
+                    <div class="modal-body heightfix">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="tabs">
+                            <span class="tab">LOGIN</span>
+                            <i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i>
+                            <span class="tabactive">REGISTER</span>
+                        </div>
+                        <div class="container" style="margin-top:-20px;">
+                            <div id="login" class="row">
+                                <div class="col-sm-4 form-box">
+                                    <div class="form-top">
+                                        <div class="form-top-left">
+                                            <p>Welcome Back!</p>
+                                        </div>
+                                        <div class="form-top-right">
+                                            <i class="fa fa-share"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-bottom">
+                                        <form role="form" action="" method="post" class="login-form">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="mobile">Mobile</label>
+                                                <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                                <input class="form-control" id="mobile" type="tel" name="mobile"
+                                                       autocomplete="off" placeholder="Mobile Number">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="password">Password</label>
+                                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                                <input class="form-control" id="password" type="password"
+                                                       name="password"
+                                                       placeholder="Password" autocomplete="off">
+                                            </div>
+                                            <button type="submit" id="custom-btn" class="btn btn-success btn"
+                                                    style="color:#FF7518 !important">Login
+                                            </button>
+                                            <button type="reset" id="custom-btn" class="btn btn-success btn">Reset
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="signup" class="row">
+                                <div class="col-sm-4 form-box">
+                                    <div class="form-top">
+                                        <div class="form-top-left">
+                                            <p>Sign Up!</p>
+                                        </div>
+                                        <div class="form-top-right">
+                                            <i class="fa fa-pencil"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-bottom">
+                                        <form role="form" action="" method="post" class="signup-form">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="name">Name</label>
+                                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                <input class="form-control" id="name" type="text" name="name"
+                                                       placeholder="Enter Your Full Name" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="mobile">Mobile</label>
+                                                <span class="input-group-addon"><i class="fa fa-mobile"></i></span>
+                                                <input class="form-control" id="mobile" type="tel" name="mobile"
+                                                       placeholder="Enter Your Mobile Number" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="email">E-Mail</label>
+                                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                <input class="form-control" id="email" type="email" name="email"
+                                                       placeholder="Enter E-Mail Id" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="password">Password</label>
+                                                <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                                                <input class="form-control" id="password" type="password"
+                                                       name="password"
+                                                       placeholder="Enter a Password" autocomplete="off">
+                                            </div>
 
+                                            <div class="form-group">
+                                                <label class="sr-only" for="password-confirm">Confirm Your
+                                                    Password</label>
+                                                <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                                                <input class="form-control" id="password-confirm" type="password"
+                                                       name="password-confirm" placeholder="Confirm Password"
+                                                       autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="institution">Select Your Institution</label>
+                                                <span class="input-group-addon"><i class="fa fa-university"></i></span>
+                                                <input class="form-control validate-this" style="display: none;"
+                                                       type="text"
+                                                       id="institution" name="institution" value="">
+                                                <select class="form-control institution-select selectized"
+                                                        data-placeholder="Select College/University" title=""> </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="city">Select Your City</label>
+                                                <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                                                <input class="form-control validate-this" style="display: none;"
+                                                       type="text"
+                                                       id="city" name="city" value="">
+                                                <select class="form-control city-select selectized"
+                                                        data-placeholder="Select City" title=""></select>
+                                            </div>
+                                            <button type="submit" id="custom-btn" class="btn btn-success btn"
+                                                    style="color:#FF7518 !important">Register
+                                            </button>
+                                            <button type="reset" id="custom-btn" class="btn btn-success btn">Reset
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="page3">
-            <div class="page_container">
-                <h1 style=" font-family:ostrich; margin-top:70px; color:#222;">Events & Workshops</h1>
+        </div>
 
+
+        <div id="user-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="about modal-content">
+                    <button type="button" class="close" data-dismiss="modal" style="margin:10px;">&times;</button>
+                    <br><br>
+
+                    <h3 style="font-family: Titillium Web; color:#FF7518 !important; font-size:40px;">Hi!</h3>
+
+                    <div class="modal-body">
+                        <p> Profile Details</p>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
-    <a class="back" href="https://anokha.amrita.edu">anokha 2016</a>
-</div>
+        </div>
+
+        <img class="animated slideInDown" id="anokhamain" src="assets/public/images/logo.png" data-toggle="modal"
+             data-target="#about">
+
+        <div id="about" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="about modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <br>
+                        <h5 style="line-height: 100%;"> Amrita School of Engineering, Coimbatore <i>presents</i></h5>
+
+                        <h1 style="font-family: Spin Cycle; line-height: 100%;">anokha</h1><h5
+                                style="margin-top:-20px;">
+                            Dare to be Different</h5><br>
+
+                        <p> Anokha, the tech fest of Amrita School of Engineering, Coimbatore,
+                            is the 3-day congregation of some of the brightest minds in India.
+                            Founded in 2010, Anokha has grown by leaps and bounds and has progressed to
+                            become one of the largest tech fests in South India. It witnesses a variety of
+                            events and workshops in different domains like Engineering, Business, Social Media, Finance,
+                            etc.
+                            Attractions like the talk series- Lumi&eacute;re, Anokha's MUN edition- LeadersMeet, Anokha
+                            Expo
+                            and the pro-show night add to its charm.
+                        </p>
+
+                        <p>The fest aims to bring the best out of students by providing them an invaluable opportunity
+                            to
+                            discover, develop and demonstrate their talents
+                            (and have a great time doing it).
+                            This year, we are determined to do the same... only bigger and better! </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="animated slideInRight" id="univlogo" src="assets/public/images/univ_small.png" width=12% height=12%
+             data-toggle="modal" data-target="#aboutuniv">
+
+        <div id="aboutuniv" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="about modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <a href="https://www.amrita.edu/" target="_blank"><img
+                                    src="assets/public/images/univ_large.png"></a>
+                        <br><br>
+
+                        <p>Amrita Viswa Vidyapeetham is a multi-campus, multi-disciplinary research university that is
+                            accredited &apos;A&apos;
+                            by the National Assessment and Accreditation Council (NAAC). It is currently ranked among
+                            the
+                            top 30 Indian
+                            universities in the BRICS&apos; International QS University Rankings, 2015. </p>
+
+                        <p>Anokha 2016 will be one amongst the few techfests
+                            in India with accreditation and support from United Nations Academic Impact (UNAI), a United
+                            Nations initiative to align
+                            institutions of higher education, scholarship and research with the United Nations and with
+                            each
+                            other.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="socmedia animated slideInLeft">
+            <a href="https://www.facebook.com/anokha.amrita" target="_blank"><img src="assets/public/images/fb.png"
+                                                                                  width=20% height=20%></a>
+            <a href="https://twitter.com/anokha_techfest" target="_blank"><img src="assets/public/images/twitter.png"
+                                                                               width=20%
+                                                                               height=20%></a>
+            <a href="https://www.instagram.com/anokhatechfest" target="_blank"><img src="assets/public/images/insta.png"
+                                                                                    width=20%
+                                                                                    height=20%></a>
+        </div>
+
+        <div class="down"></div> <!--down arrow -->
+        <div class="menuitems">
+            <div class="hvr-underline-from-center" id="events-link" data-toggle="modal" data-target="#events">Events</div>
+            <div class="hvr-underline-from-center" id="workshops-link" data-toggle="modal" data-target="#ws">Workshops</div>
+            <div class="hvr-underline-from-center" id="eventide-link">Eventide</div>
+            <div class="hvr-underline-from-center" id="lumiere-link">Lumi&Eacute;re</div>
+            <div class="hvr-underline-from-center" id="expo-link">Expo</div>
+            <div class="hvr-underline-from-center" id="retaliation-link">Retaliation</div>
+            <div class="hvr-underline-from-center" id="leadersmeet-link">Leadersmeet</div>
+        </div>
+
+        <div id="events" class="custmodal modal animated fadeIn" tabindex="-1" role="dialog"
+             aria-labelledby="windowTitleLabel">
+            <div class="custmodal-dialog modal-dialog">
+                <div class="custmodal-content modal-content">
+                    <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
+                    <br><br><br>
+
+                    <h3 style="font-family: Titillium Web; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
+                        Events</h3>
+
+                    <div class="custmodal-body modal-body">
+                        <ul class="nav nav-pills" id="event-groups"
+                            style="color:#252525 !important; font-size:20px;"></ul>
+                        <div id="event-grid">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ws" class="custmodal modal animated fadeIn" tabindex="-1" role="dialog"
+             aria-labelledby="windowTitleLabel">
+            <div class="custmodal-dialog modal-dialog">
+                <div class="custmodal-content modal-content">
+                    <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
+                    <br><br><br>
+
+                    <h3 style="font-family: Titillium Web; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
+                        Workshops</h3>
+
+                    <div class="custmodal-body modal-body">
+                        <ul class="nav nav-pills" id="workshop-departments"
+                            style="color:#252525 !important; font-size:20px;"></ul>
+                        <div id="workshop-grid">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="event-modal" class="custmodal modal" tabindex="-1" role="dialog">
+            <div class="custmodal-dialog modal-dialog">
+                <div class="custmodal-content modal-content">
+                    <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
+                    <br><br><br>
+
+                    <h3 class="title" style="font-family: Titillium Web,serif; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
+                        Event Title</h3>
+                    <div class="custmodal-body modal-body">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs" style="color:#252525 !important; font-size:20px;">
+                                <li class="active"><a href="#desc-tab" data-toggle="tab">Description</a></li>
+                                <li><a href="#details-tab" data-toggle="tab">Details</a></li>
+                                <li><a href="#rules-tab" data-toggle="tab">Rules</a></li>
+                                <li><a href="#judge-tab" data-toggle="tab">Judgement Criteria</a></li>
+                                <li><a href="#contact-tab" data-toggle="tab">Contact</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="desc-tab">
+                                    <p id="event-desc"></p>
+                                </div>
+                                <div class="tab-pane" id="details-tab"><br>
+
+                                    <strong>Event type: </strong><p id="event-type"></p>
+
+                                    <strong>Prizes Worth: </strong><p id="event-prize"></p>
+
+                                    <strong>When? </strong><p id="event-date"></p>
+
+                                    <strong>Where? </strong><p id="event-location"></p>
+
+                                    <strong>Fee: </strong><p id="event-fee"></p>
+                                </div>
+                                <div class="tab-pane" id="rules-tab">
+                                    <p id="event-rules"></p>
+                                </div>
+                                <div class="tab-pane" id="judge-tab">
+                                    <p id="event-judge"></p>
+                                </div>
+                                <div class="tab-pane" id="contact-tab" style="padding-top: 30px;">
+                                    <p>For more details regarding this event, you can contact the event manager(s)</p>
+                                    <ul id="event-contacts">
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <a id="cust-btn" class="register-btn btn btn-primary">Register</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="workshop-modal" class="custmodal modal" tabindex="-1" role="dialog">
+            <div class="custmodal-dialog modal-dialog">
+                <div class="custmodal-content modal-content">
+                    <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
+                    <br><br><br>
+
+                    <h3 style="font-family: Titillium Web; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
+                        Workshop Title</h3>
+
+                    <div class="custmodal-body modal-body">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs" style="color:#252525 !important; font-size:20px;">
+                                <li class="active"><a href="#wsdesc-tab" data-toggle="tab">Description</a></li>
+                                <li><a href="#about-tab" data-toggle="tab">About</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="wsdesc-tab">
+                                    <p id="event-desc"></p>
+                                </div>
+                                <div class="tab-pane" id="about-tab">
+                                    <p id="event-about"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a id="cust-btn" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div id="eventide">
+                <div class="eveicon animated slideInLeft">
+                    <i class="fa fa-play-circle"></i><BR>
+                    EVENTIDE
+                </div>
+                <div id="slider">
+                    <a class="control_next">></a>
+                    <a class="control_prev"><</a>
+                    <ul>
+                        <li><img src="assets/public/images/e1.png"/></li>
+                        <li>
+                            <h2 style="margin-top:15%">Eventide</h2>
+
+                            <p>EVENTIDE, the entertainment hub of Anokha, has always kept its promise by enticing all
+                                with
+                                music, art and dance
+                                performances every year. Once again, we are back to keep that word. On these three
+                                eagerly
+                                awaited days of Anokha in
+                                the past, enjoyed the graceful twirls of Natyasudha- the Dance Club of Amrita, swayed to
+                                the
+                                melodies from Ragasudha,
+                                the Music Club, we have witnessed performances by well-known artists like RAM CHARI,
+                                SIVAMANI, STEPHEN DEVASSY, KARTHIK and BENNY DAYAL. This year for Eventide, we bring to
+                                you
+                                the musical maestros
+                                HARICHARAN and SHAKTHISREE. With over 1000 songs to their names, these Filmfare, Asianet
+                                and
+                                Vijay award winners
+                                are set to rock the stage on the last night of Anokha marking the end of the spectacular
+                                fest.
+                            </p>
+                        </li>
+                        <li><img src="assets/public/images/e2.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="lumiere">
+                <div class="lumicon animated slideInLeft">
+                    <img src="assets/public/images/lumiere logo.png" height=65% width=65%/><br>
+                    <span style="color:#fff;">LUMI&Eacute;RE</span>
+                </div>
+                <div class=" animated zoomIn">
+                    <br>
+                    <img src="assets/public/images/lumiere logo-o.png"/><br>
+
+                    <h2>The Lumi&eacute;re Conclave</h2>
+
+                    <p>The word "Lumi&eacute;re" stands for "light" in French.
+                        The Lumi&eacute;re conclave's mission as a premium talk series is to establish a forum that
+                        sheds
+                        <i>light</i>
+                        on the right things, to the right audience. The year 2015 saw the inaugural edition of The Lumi&eacute;re
+                        conclave which had elite policy makers such as Dr. J.P.Narayanan and category-defining
+                        innovators
+                        such
+                        as Mr. Saurabh Kaushal, ex-founder of Xovian. This year Lumi&eacute;re continues its journey as
+                        we
+                        prepare an
+                        ensemble of speakers from different avenues of Modern day India who change and influence India
+                        in a
+                        small
+                        way, every day. It will be a limited-admit event , taking place on the 19th of February. Our
+                        distinguished
+                        speakers will be introduced to our viewers over the next few days along with details about
+                        registration.
+                        So stay tuned to this page and the official Anokha facebook page to witness our roster unfold.
+                    </p>
+                </div>
+            </div>
+            <div id="expo">
+                <div class="expoicon animated slideInLeft">
+                    <img src="assets/public/images/expo_logo.png" height=80% width=80%><br>
+                    ANOKHA EXPO
+                </div>
+                <div class="animated flash">
+                    <i class="fa fa-cogs" style="font-size: 70px; margin-top:160px; padding-bottom:20px;"></i>
+                    <br>
+
+                    <h2>C O M I N G <br> S O O N</h2>
+                </div>
+            </div>
+            <div id="retaliation">
+                <div class="reticon animated slideInLeft">
+                    <i class="fa fa-gamepad"></i><br>
+                    RETALIATION
+                </div>
+                <div class=" animated zoomIn">
+                    <br>
+
+                    <h2>Pick Your Poison</h2>
+                    <img src="assets/public/images/g1.png"/>
+                    <img src="assets/public/images/g2.png"/>
+                    <img src="assets/public/images/g3.png"/>
+                    <img src="assets/public/images/g4.png"/>
+                    <br><br>
+
+                    <p style="text-indent: 0;">The stakes are as big as they come.<br> Participate in one of the most
+                        sought after gaming events
+                        in South India. <br> Three days of pure gaming. Nothing else.<br>
+                        Unleash the gamer in you.<br>
+                    <h5>~Registrations opening soon!~</h5>
+                    </p>
+                </div>
+            </div>
+            <div id="leaders">
+                <div class="lumicon animated slideInLeft">
+                    <img src="assets/public/images/l1.png" height=75% width=75%/><br>
+                    <span style="color:#fff;">LEADERSMEET</span>
+                </div>
+                <div class=" animated zoomIn">
+                    <BR>
+
+                    <h2>LeadersMeet - Anokha's MUN </h2><BR>
+                    <h4><i>"Never doubt that a small group of committed people can change the world. <br>
+                            Indeed, it is the only thing that ever has."</i></h4>
+                    <h5>- Margaret Mead</h5><br>
+
+                    <p style="text-align: justify;">
+                        Gear up to get up and use your voice as a global citizen, to don the hat of diplomats,
+                        to discuss issues affecting various countries and to ponder over feasible solutions for
+                        crisis round the globe coz it is time for the LEADERSMEET, Amrita's very own MUN chapter.
+                        Be it Economics, Terrorism, Environment, Politics, Cross-border relations, Regionalism &boxh;
+                        we strive to cover everything in the councils and this will surely enlighten the minds of
+                        the students who come for this conference by helping them understand the role they can play
+                        to make this world a better place. <br><br></p>
+                    After all it is about the right kind of COM-"MUN"-NI-CATION!
+                </div>
+            </div>
+
+        </div> <!-- container1 -->
+    </section> <!-- gradient bg -->
 </body>
 </html>
