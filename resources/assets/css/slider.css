@@ -22,7 +22,7 @@
   padding: 0;
   width: 875px;
   height: 498px;
-  background: #252525;
+  background: #transparent;
   text-align: center;
   line-height: 300px;
 }
@@ -40,12 +40,12 @@ a.control_prev, a.control_next {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
-  opacity: 0.5;
+  opacity: 0;
   cursor: pointer;
 }
 
 a.control_prev:hover, a.control_next:hover {
-  opacity: 0.8;
+  opacity: 0.2;
   -webkit-transition: all 0.2s ease;
   color: #fff;
 }
