@@ -17,7 +17,7 @@ html {
 
 h2 {
     font-family: Titillium Web, serif !important;
-    color: #FF7518 !important;
+    color: #FD6C0b !important;
 }
 
 ul {
@@ -114,7 +114,7 @@ a, a:link, a:hover, a:visited, a:active {
 .cover {
     background: #fff;
     background-image: none !important;
-    color: #FF7518 !important;
+    color: #FD6C0b !important;
 }
 
 .leftmenu {
@@ -170,7 +170,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .animation-element1:hover {
-    border-left: 4px solid #FF7518;
+    border-left: 4px solid #FD6C0b;
     cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #menu4 {
-    border-bottom: 3px solid #FF7518;
+    border-bottom: 3px solid #FD6C0b;
 }
 
 /* nav icon toggle */
@@ -236,12 +236,12 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #nav-icon:hover {
-    color: #FF7518;
+    color: #FD6C0b;
 }
 
 .close {
     font-size: 30px !important;
-    color: #FF7518 !important;
+    color: #FD6C0b !important;
     opacity: 1 !important;
     margin-top: -1%;
 
@@ -261,7 +261,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .socmedia img:hover {
-    border-bottom: 2px solid #FF7518;
+    border-bottom: 2px solid #FD6C0b;
 }
 
 #leaders, #lumiere, #eventide p, #retaliation {
@@ -418,7 +418,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-    color: #FF7518;
+    color: #FD6C0b;
 }
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
@@ -525,7 +525,7 @@ a, a:link, a:hover, a:visited, a:active {
 .form-top-left p {
     text-indent: 0;
     opacity: 1;
-    color: #FF7518;
+    color: #FD6C0b;
 }
 
 .form-top-right {
@@ -628,7 +628,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #schedule {
-    border-left: 4px solid #FF7518;
+    border-left: 4px solid #FD6C0b;
 }
 
 .container2 {
@@ -661,7 +661,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 .nav-tabs > li, .nav-pills > li {
     float: none !important;
-    color: #FF7518 !important;
+    color: #FD6C0b !important;
     display: inline-block !important;
 }
 
@@ -676,7 +676,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 #cust-btn:hover {
     font-weight: 500 !important;
-    border: 2px solid #FF7518;
+    border: 2px solid #FD6C0b;
 }
 
 #event-desc, #event-rules, #event-judge, #event-about {
@@ -742,7 +742,7 @@ input.form-control {
 
 .sorter.active > a {
     color: #FFFFFF !important;
-    background-color: #FF7518 !important;
+    background-color: #FD6C0b !important;
 }
 .form-control-feedback {
     line-height: 2;
