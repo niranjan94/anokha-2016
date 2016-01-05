@@ -17,7 +17,7 @@ html {
 
 h2 {
     font-family: Titillium Web, serif !important;
-    color: #FD6C0b !important;
+    color: #FC5A01 !important;
 }
 
 ul {
@@ -114,7 +114,7 @@ a, a:link, a:hover, a:visited, a:active {
 .cover {
     background: #fff;
     background-image: none !important;
-    color: #FD6C0b !important;
+    color: #FC5A01 !important;
 }
 
 .leftmenu {
@@ -170,7 +170,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .animation-element1:hover {
-    border-left: 4px solid #FD6C0b;
+    border-left: 4px solid #FC5A01;
     cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #menu4 {
-    border-bottom: 3px solid #FD6C0b;
+    border-bottom: 3px solid #FC5A01;
 }
 
 /* nav icon toggle */
@@ -236,12 +236,12 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #nav-icon:hover {
-    color: #FD6C0b;
+    color: #FC5A01;
 }
 
 .close {
     font-size: 30px !important;
-    color: #FD6C0b !important;
+    color: #FC5A01 !important;
     opacity: 1 !important;
     margin-top: -1%;
 
@@ -261,7 +261,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .socmedia img:hover {
-    border-bottom: 2px solid #FD6C0b;
+    border-bottom: 2px solid #FC5A01;
 }
 
 #leaders, #lumiere, #eventide p, #retaliation {
@@ -418,7 +418,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-    color: #FD6C0b;
+    color: #FC5A01;
 }
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
@@ -525,7 +525,7 @@ a, a:link, a:hover, a:visited, a:active {
 .form-top-left p {
     text-indent: 0;
     opacity: 1;
-    color: #FD6C0b;
+    color: #FC5A01;
 }
 
 .form-top-right {
@@ -536,7 +536,7 @@ a, a:link, a:hover, a:visited, a:active {
     font-size: 37px;
     color: #fff;
     line-height: 100%;
-    text-align: right;
+    text-align: center;
     opacity: 1;
 }
 
@@ -628,7 +628,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #schedule {
-    border-left: 4px solid #FD6C0b;
+    border-left: 4px solid #FC5A01;
 }
 
 .container2 {
@@ -661,7 +661,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 .nav-tabs > li, .nav-pills > li {
     float: none !important;
-    color: #FD6C0b !important;
+    color: #FC5A01 !important;
     display: inline-block !important;
 }
 
@@ -676,7 +676,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 #cust-btn:hover {
     font-weight: 500 !important;
-    border: 2px solid #FD6C0b;
+    border: 2px solid #FC5A01;
 }
 
 #event-desc, #event-rules, #event-judge, #event-about {
@@ -748,7 +748,7 @@ input.form-control {
 
 .sorter.active > a {
     color: #FFFFFF !important;
-    background-color: #FD6C0b !important;
+    background-color: #FC5A01 !important;
 }
 .form-control-feedback {
     line-height: 2;

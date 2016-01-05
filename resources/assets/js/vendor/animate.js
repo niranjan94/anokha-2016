@@ -38,7 +38,7 @@ var main = function () {
             display: 'block'
         });
         $('#menu3').css({
-            'border-bottom': '3px solid #FF7518'
+            'border-bottom': '3px solid #FC5A01'
         });
         $('#menu6,#menu5,#menu4,#menu2,#menu1,#menu7').css({
             'border-bottom': 'none'
@@ -53,7 +53,7 @@ var main = function () {
             display: 'block'
         });
         $('#menu4').css({
-            'border-bottom': '3px solid #FF7518'
+            'border-bottom': '3px solid #FC5A01'
         });
         $('#menu6,#menu5,#menu3,#menu2,#menu1,#menu7').css({
             'border-bottom': 'none'
@@ -68,7 +68,7 @@ var main = function () {
             display: 'block'
         });
         $('#menu5').css({
-            'border-bottom': '3px solid #FF7518'
+            'border-bottom': '3px solid #FC5A01'
         });
         $('#menu6,#menu4,#menu3,#menu2,#menu1,#menu7').css({
             'border-bottom': 'none'
@@ -83,7 +83,7 @@ var main = function () {
             display: 'block'
         });
         $('#menu6').css({
-            'border-bottom': '3px solid #FF7518'
+            'border-bottom': '3px solid #FC5A01'
         });
         $('#menu5,#menu4,#menu3,#menu2,#menu1,#menu7').css({
             'border-bottom': 'none'
@@ -98,7 +98,7 @@ var main = function () {
             display: 'block'
         });
         $('#menu7').css({
-            'border-bottom': '3px solid #FF7518'
+            'border-bottom': '3px solid #FC5A01'
         });
         $('#menu6,#menu5,#menu4,#menu3,#menu2,#menu1').css({
             'border-bottom': 'none'
@@ -184,7 +184,7 @@ var main = function () {
             });
 
             $(this).css({
-                'border-left': '4px solid #FF7518'
+                'border-left': '4px solid #FC5A01'
             });
 
         }
