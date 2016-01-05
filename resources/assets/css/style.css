@@ -206,7 +206,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .custmodal-body {
-    text-align:center;
+    text-align:left;
     position: absolute !important;
     height: 75%;
     width: 100%;
@@ -643,7 +643,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .container2 p {
-    line-height: 100%;
+    line-height: 120%;
 }
 
 .contacts ul {
