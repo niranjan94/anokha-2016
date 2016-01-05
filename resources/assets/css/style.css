@@ -200,16 +200,17 @@ a, a:link, a:hover, a:visited, a:active {
     border-radius: 0 !important;
     box-shadow: none;
     background-image: url("/assets/public/images/light.png");
+    padding-left:10px;
+    padding-right:10px;
     overflow: hidden;
 }
 
 .custmodal-body {
     position: absolute !important;
     height: 75%;
-    width: 90%;
+    width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
-    padding:30px;
 }
 
 #events, #workshops, #eventide, #retaliation, #expo, #leaders {
