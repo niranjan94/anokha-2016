@@ -17,7 +17,7 @@ html {
 
 h2 {
     font-family: Titillium Web, serif !important;
-    color: #FC5A01 !important;
+    color: #fb5e00 !important;
 }
 
 ul {
@@ -25,9 +25,9 @@ ul {
 }
 
 .gradientbg {
-    background-image: -moz-linear-gradient(180deg,#1ac1f2,#DDD148);
-    background-image: -webkit-linear-gradient(180deg,#1ac1f2,#DDD148);
-    background-image: linear-gradient(180deg,#1ac1f2,#DDD148);
+    background-image: -moz-linear-gradient(180deg,#1ac1f2,#46e28c);
+    background-image: -webkit-linear-gradient(180deg,#1ac1f2,#46e28c);
+    background-image: linear-gradient(180deg,#1ac1f2,#46e28c);
     overflow: hidden;
     color: #ffffff;
 }
@@ -114,7 +114,7 @@ a, a:link, a:hover, a:visited, a:active {
 .cover {
     background: #fff;
     background-image: none !important;
-    color: #FC5A01 !important;
+    color: #fb5e00 !important;
 }
 
 .leftmenu {
@@ -170,7 +170,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .animation-element1:hover {
-    border-left: 4px solid #FC5A01;
+    border-left: 4px solid #fb5e00;
     cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #menu4 {
-    border-bottom: 3px solid #FC5A01;
+    border-bottom: 3px solid #fb5e00;
 }
 
 /* nav icon toggle */
@@ -236,12 +236,12 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #nav-icon:hover {
-    color: #FC5A01;
+    color: #fb5e00;
 }
 
 .close {
     font-size: 30px !important;
-    color: #FC5A01 !important;
+    color: #fb5e00 !important;
     opacity: 1 !important;
     margin-top: -1%;
 
@@ -261,7 +261,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .socmedia img:hover {
-    border-bottom: 2px solid #FC5A01;
+    border-bottom: 2px solid #fb5e00;
 }
 
 #leaders, #lumiere, #eventide p, #retaliation {
@@ -418,7 +418,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-    color: #FC5A01;
+    color: #fb5e00;
 }
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
@@ -525,7 +525,7 @@ a, a:link, a:hover, a:visited, a:active {
 .form-top-left p {
     text-indent: 0;
     opacity: 1;
-    color: #FC5A01;
+    color: #fb5e00;
 }
 
 .form-top-right {
@@ -628,7 +628,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #schedule {
-    border-left: 4px solid #FC5A01;
+    border-left: 4px solid #fb5e00;
 }
 
 .container2 {
@@ -661,7 +661,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 .nav-tabs > li, .nav-pills > li {
     float: none !important;
-    color: #FC5A01 !important;
+    color: #fb5e00 !important;
     display: inline-block !important;
 }
 
@@ -676,7 +676,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 #cust-btn:hover {
     font-weight: 500 !important;
-    border: 2px solid #FC5A01;
+    border: 2px solid #fb5e00;
 }
 
 #event-desc, #event-rules, #event-judge, #event-about {
@@ -748,7 +748,7 @@ input.form-control {
 
 .sorter.active > a {
     color: #FFFFFF !important;
-    background-color: #FC5A01 !important;
+    background-color: #fb5e00 !important;
 }
 .form-control-feedback {
     line-height: 2;
