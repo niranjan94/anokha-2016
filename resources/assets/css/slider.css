@@ -20,7 +20,7 @@
   float: left;
   margin: 0;
   padding: 0;
-  width: 875px;
+  width: 888px;
   height: 498px;
   background: transparent;
   text-align: center;
@@ -35,12 +35,11 @@ a.control_prev, a.control_next {
   padding: 4% 3%;
   width: auto;
   height: auto;
-  background: #2a2a2a;
-  color: #fff;
+  color: #fb5e00;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
-  opacity: 0;
+  font-size: 20px;
+  opacity: 0.1;
   cursor: pointer;
 }
 
