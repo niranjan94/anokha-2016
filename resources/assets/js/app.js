@@ -127,7 +127,7 @@ voila.listEvents(function (events) {
         filter: '*',
         layoutMode: 'fitRows',
         fitRows: {
-            gutter: 3
+            gutter: 1
         },
         resizesContainer : false
     });
@@ -155,7 +155,7 @@ voila.listEvents(function (events) {
         filter: '*',
         layoutMode: 'fitRows',
         fitRows: {
-            gutter: 3
+            gutter: 1
         },
         resizesContainer : false
     });
@@ -193,15 +193,21 @@ $workshopDepartments.on('click', 'li', function(){
 });
 
 $eventsListModel.on('shown.bs.modal', function (e) {
+    $eventsListModel.find(".event-sorter[data-sort-class='*']").trigger("click");
     $eventGrid.isotope({ filter: "*" });
     pushWithoutStateChange(null, "Events - Anokha 2016", "/events");
+    $eventGrid.getNiceScroll().resize();
+
 }).on('hidden.bs.modal', function (e) {
     History.replaceState(null, "Anokha 2016", "/");
 });
 
 $workshopsListModel.on('shown.bs.modal', function (e) {
+    $workshopsListModel.find(".event-sorter[data-sort-class='*']").trigger("click");
     $workshopGrid.isotope({ filter: "*" });
     pushWithoutStateChange(null, "Workshops - Anokha 2016", "/workshops");
+    $workshopGrid.getNiceScroll().resize();
+
 }).on('hidden.bs.modal', function (e) {
     History.replaceState(null, "Anokha 2016", "/");
 });
@@ -263,11 +269,22 @@ $(document).on('click', '.grid-item', function(){
         }
     });
 
+    $modal.find(".tab-content").niceScroll({
+        cursorwidth:"10px",
+        cursorborderradius: "0px",
+        cursoropacitymin: 0.5,
+        horizrailenabled: false,
+        cursorborder: "none"
+    });
+
+
     if(voila.isLoggedIn()) {
         $modal.find(".register-btn").data("event-id", event.id);
         $modal.find(".register-btn").show();
+        $modal.find(".login-to-register-btn").hide();
     } else {
         $modal.find(".register-btn").hide();
+        $modal.find(".login-to-register-btn").show();
     }
 
     $modal.modal("show");
