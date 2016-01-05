@@ -20,7 +20,7 @@
   float: left;
   margin: 0;
   padding: 0;
-  width: 888px;
+  width: 890px;
   height: 498px;
   background: transparent;
   text-align: center;
@@ -38,13 +38,13 @@ a.control_prev, a.control_next {
   color: #fb5e00;
   text-decoration: none;
   font-weight: 600;
-  font-size: 20px;
-  opacity: 0.1;
+  font-size: 25px;
+  opacity: 0.8;
   cursor: pointer;
 }
 
 a.control_prev:hover, a.control_next:hover {
-  opacity: 0.2;
+  opacity: 1;
   -webkit-transition: all 0.2s ease;
   color: #fff;
 }
