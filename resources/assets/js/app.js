@@ -305,6 +305,10 @@ $workshopModal.on('hidden.bs.modal', function (e) {
 });
 
 var stateChangeHandler = function(){
+
+    ga('set', 'location', window.location.href);
+    ga('send', 'pageview');
+
     if(!lock) {
         var path = new URI(window.location.href).pathname();
         var splitPath = path.split("/");
