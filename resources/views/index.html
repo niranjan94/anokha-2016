@@ -21,7 +21,7 @@
                     <div class="custmodal-body modal-body" style="height: 100%;">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <ul class="menu">
-                            <li><a href="https://anokha.amrita.edu/"><span class="animation-element1"> HOME </span></a>
+                            <li data-dismiss="modal"><a href="#"><span class="animation-element1"> HOME </span></a>
                             </li>
                             <li><span class="animation-element1" id="schedule"> SCHEDULE </span></li>
                             <li><span class="animation-element1" id="sponsors"> SPONSORS </span></li>
@@ -67,7 +67,7 @@
                                     walk to campus upon alighting at
                                     the station.</p>
 
-                                <a href="../Anokha 2016 - Travel Info.pdf">Download Bus and Train Schedule</a>
+                                <a href="/assets/public/Anokha%202016%20-%20Travel%20Info.pdf">Download Bus and Train Schedule</a>
 
                             </div>
                             <div class="sponsors">
@@ -97,8 +97,10 @@
                 </div>
             </div>
         </div>
-        <span class="top-panel hvr-sweep-to-right animated slideInRight" data-toggle="modal" data-target="#logreg"
+        <span class="top-panel hvr-sweep-to-right animated slideInRight login-register-button" data-toggle="modal" data-target="#logreg"
               style="">LOGIN/REGISTER </span>
+
+        <span class="top-panel hvr-sweep-to-right animated slideInRight hi-button" style="display: none;">Hi, <strong class="name"></strong> </span>
 
         <div id="logreg" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
@@ -231,7 +233,7 @@
                     <button type="button" class="close" data-dismiss="modal" style="margin:10px;">&times;</button>
                     <br><br>
 
-                    <h3 style="font-family: Titillium Web; color:#FF7518 !important; font-size:40px;">Hi!</h3>
+                    <h3 style="font-family: Titillium Web, serif; color:#FF7518 !important; font-size:40px;">Hi!</h3>
 
                     <div class="modal-body">
                         <p> Profile Details</p>
@@ -240,7 +242,7 @@
             </div>
         </div>
 
-        <img class="animated slideInDown" id="anokhamain" src="assets/public/images/logo.png" data-toggle="modal"
+        <img class="animated slideInDown" id="anokhamain" src="/assets/public/images/logo.png" data-toggle="modal"
              data-target="#about">
 
         <div id="about" class="modal fade" role="dialog">
@@ -251,7 +253,7 @@
                         <br>
                         <h5 style="line-height: 100%;"> Amrita School of Engineering, Coimbatore <i>presents</i></h5>
 
-                        <h1 style="font-family: Spin Cycle; line-height: 100%;">anokha</h1><h5
+                        <h1 style="font-family: Spin Cycle, serif; line-height: 100%;">anokha</h1><h5
                                 style="margin-top:-20px;">
                             Dare to be Different</h5><br>
 
@@ -276,7 +278,7 @@
                 </div>
             </div>
         </div>
-        <img class="animated slideInRight" id="univlogo" src="assets/public/images/univ_small.png" width=12% height=12%
+        <img class="animated slideInRight" id="univlogo" src="/assets/public/images/univ_small.png" width=12% height=12%
              data-toggle="modal" data-target="#aboutuniv">
 
         <div id="aboutuniv" class="modal fade" role="dialog">
@@ -285,7 +287,7 @@
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <a href="https://www.amrita.edu/" target="_blank"><img
-                                    src="assets/public/images/univ_large.png"></a>
+                                    src="/assets/public/images/univ_large.png"></a>
                         <br><br>
 
                         <p>Amrita Viswa Vidyapeetham is a multi-campus, multi-disciplinary research university that is
@@ -307,12 +309,12 @@
             </div>
         </div>
         <div class="socmedia animated slideInLeft">
-            <a href="https://www.facebook.com/anokha.amrita" target="_blank"><img src="assets/public/images/fb.png"
+            <a href="https://www.facebook.com/anokha.amrita" target="_blank"><img src="/assets/public/images/fb.png"
                                                                                   width=20% height=20%></a>
-            <a href="https://twitter.com/anokha_techfest" target="_blank"><img src="assets/public/images/twitter.png"
+            <a href="https://twitter.com/anokha_techfest" target="_blank"><img src="/assets/public/images/twitter.png"
                                                                                width=20%
                                                                                height=20%></a>
-            <a href="https://www.instagram.com/anokhatechfest" target="_blank"><img src="assets/public/images/insta.png"
+            <a href="https://www.instagram.com/anokhatechfest" target="_blank"><img src="/assets/public/images/insta.png"
                                                                                     width=20%
                                                                                     height=20%></a>
         </div>
@@ -321,11 +323,12 @@
         <div class="menuitems">
             <div class="hvr-underline-from-center" id="events-link" data-toggle="modal" data-target="#events">Events</div>
             <div class="hvr-underline-from-center" id="workshops-link" data-toggle="modal" data-target="#ws">Workshops</div>
-            <div class="hvr-underline-from-center" id="eventide-link">Eventide</div>
-            <div class="hvr-underline-from-center" id="lumiere-link">Lumi&Eacute;re</div>
-            <div class="hvr-underline-from-center" id="expo-link">Expo</div>
-            <div class="hvr-underline-from-center" id="retaliation-link">Retaliation</div>
-            <div class="hvr-underline-from-center" id="leadersmeet-link">Leadersmeet</div>
+            <div class="hvr-underline-from-center" id="menu3">Eventide</div>
+            <div class="hvr-underline-from-center" id="menu4">Lumi&Eacute;re</div>
+            <div class="hvr-underline-from-center" id="menu5">Expo</div>
+            <div class="hvr-underline-from-center" id="menu6">Retaliation</div>
+            <div class="hvr-underline-from-center" id="menu7">Leadersmeet</div>
+
         </div>
 
         <div id="events" class="custmodal modal animated fadeIn" tabindex="-1" role="dialog"
@@ -335,7 +338,7 @@
                     <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
                     <br><br><br>
 
-                    <h3 style="font-family: Titillium Web; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
+                    <h3 style="font-family: Titillium Web, serif; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
                         Events</h3>
 
                     <div class="custmodal-body modal-body">
@@ -356,7 +359,7 @@
                     <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
                     <br><br><br>
 
-                    <h3 style="font-family: Titillium Web; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
+                    <h3 style="font-family: Titillium Web, serif; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
                         Workshops</h3>
 
                     <div class="custmodal-body modal-body">
@@ -381,17 +384,17 @@
                     <div class="custmodal-body modal-body">
                         <div class="tabbable">
                             <ul class="nav nav-tabs" style="color:#252525 !important; font-size:20px;">
-                                <li class="active"><a href="#desc-tab" data-toggle="tab">Description</a></li>
-                                <li><a href="#details-tab" data-toggle="tab">Details</a></li>
-                                <li><a href="#rules-tab" data-toggle="tab">Rules</a></li>
-                                <li><a href="#judge-tab" data-toggle="tab">Judgement Criteria</a></li>
-                                <li><a href="#contact-tab" data-toggle="tab">Contact</a></li>
+                                <li class="active"><a href="#event-description-tab" data-toggle="tab">Description</a></li>
+                                <li><a href="#event-details-tab" data-toggle="tab">Details</a></li>
+                                <li><a href="#event-rules-tab" data-toggle="tab">Rules</a></li>
+                                <li><a href="#event-judge-tab" data-toggle="tab">Judgement Criteria</a></li>
+                                <li><a href="#event-contact-tab" data-toggle="tab">Contact</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div class="tab-pane active" id="desc-tab">
+                                <div class="tab-pane active" id="event-description-tab">
                                     <p id="event-desc"></p>
                                 </div>
-                                <div class="tab-pane" id="details-tab"><br>
+                                <div class="tab-pane" id="event-details-tab"><br>
 
                                     <strong>Event type: </strong><p id="event-type"></p>
 
@@ -401,15 +404,15 @@
 
                                     <strong>Where? </strong><p id="event-location"></p>
 
-                                    <strong>Fee: </strong><p id="event-fee"></p>
+                                    <strong>Registration Fee: </strong><p id="event-fee"></p>
                                 </div>
-                                <div class="tab-pane" id="rules-tab">
+                                <div class="tab-pane" id="event-rules-tab">
                                     <p id="event-rules"></p>
                                 </div>
-                                <div class="tab-pane" id="judge-tab">
+                                <div class="tab-pane" id="event-judge-tab">
                                     <p id="event-judge"></p>
                                 </div>
-                                <div class="tab-pane" id="contact-tab" style="padding-top: 30px;">
+                                <div class="tab-pane" id="event-contact-tab" style="padding-top: 30px;">
                                     <p>For more details regarding this event, you can contact the event manager(s)</p>
                                     <ul id="event-contacts">
 
@@ -430,25 +433,45 @@
                     <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
                     <br><br><br>
 
-                    <h3 style="font-family: Titillium Web; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
-                        Workshop Title</h3>
+                    <h3 class="title" style="font-family: Titillium Web, serif; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
+                        Event Title</h3>
 
                     <div class="custmodal-body modal-body">
                         <div class="tabbable">
                             <ul class="nav nav-tabs" style="color:#252525 !important; font-size:20px;">
-                                <li class="active"><a href="#wsdesc-tab" data-toggle="tab">Description</a></li>
-                                <li><a href="#about-tab" data-toggle="tab">About</a></li>
+                                <li class="active"><a href="#workshop-description-tab" data-toggle="tab">Description</a></li>
+                                <li><a href="#workshop-about-tab" data-toggle="tab">About</a></li>
+                                <li><a href="#workshop-details-tab" data-toggle="tab">Details</a></li>
+                                <li><a href="#workshop-contact-tab" data-toggle="tab">Contact</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div class="tab-pane active" id="wsdesc-tab">
+                                <div class="tab-pane active" id="workshop-description-tab">
                                     <p id="event-desc"></p>
                                 </div>
-                                <div class="tab-pane" id="about-tab">
+                                <div class="tab-pane" id="workshop-about-tab">
                                     <p id="event-about"></p>
                                 </div>
+                                <div class="tab-pane" id="workshop-details-tab"><br>
+
+                                    <strong>Workshop type: </strong><p id="event-type"></p>
+
+                                    <strong>When? </strong><p id="event-date"></p>
+
+                                    <strong>Where? </strong><p id="event-location"></p>
+
+                                    <strong>Registration Fee: </strong><p id="event-fee"></p>
+                                </div>
+
+                                <div class="tab-pane" id="workshop-contact-tab" style="padding-top: 30px;">
+                                    <p>For more details regarding this event, you can contact the event manager(s)</p>
+                                    <ul id="event-contacts">
+
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
-                        <a id="cust-btn" class="btn btn-primary">Register</a>
+                        <a id="cust-btn" class="register-btn btn btn-primary">Register</a>
                     </div>
                 </div>
             </div>
@@ -464,7 +487,7 @@
                     <a class="control_next">></a>
                     <a class="control_prev"><</a>
                     <ul>
-                        <li><img src="assets/public/images/e1.png"/></li>
+                        <li><img src="/assets/public/images/e1.png"/></li>
                         <li>
                             <h2 style="margin-top:15%">Eventide</h2>
 
@@ -488,18 +511,18 @@
                                 fest.
                             </p>
                         </li>
-                        <li><img src="assets/public/images/e2.png"></li>
+                        <li><img src="/assets/public/images/e2.png"></li>
                     </ul>
                 </div>
             </div>
             <div id="lumiere">
                 <div class="lumicon animated slideInLeft">
-                    <img src="assets/public/images/lumiere logo.png" height=65% width=65%/><br>
+                    <img src="/assets/public/images/lumiere logo.png" height=65% width=65%/><br>
                     <span style="color:#fff;">LUMI&Eacute;RE</span>
                 </div>
                 <div class=" animated zoomIn">
                     <br>
-                    <img src="assets/public/images/lumiere logo-o.png"/><br>
+                    <img src="/assets/public/images/lumiere logo-o.png"/><br>
 
                     <h2>The Lumi&eacute;re Conclave</h2>
 
@@ -527,7 +550,7 @@
             </div>
             <div id="expo">
                 <div class="expoicon animated slideInLeft">
-                    <img src="assets/public/images/expo_logo.png" height=80% width=80%><br>
+                    <img src="/assets/public/images/expo_logo.png" height=80% width=80%><br>
                     ANOKHA EXPO
                 </div>
                 <div class="animated flash">
@@ -546,23 +569,24 @@
                     <br>
 
                     <h2>Pick Your Poison</h2>
-                    <img src="assets/public/images/g1.png"/>
-                    <img src="assets/public/images/g2.png"/>
-                    <img src="assets/public/images/g3.png"/>
-                    <img src="assets/public/images/g4.png"/>
+                    <img src="/assets/public/images/g1.png"/>
+                    <img src="/assets/public/images/g2.png"/>
+                    <img src="/assets/public/images/g3.png"/>
+                    <img src="/assets/public/images/g4.png"/>
                     <br><br>
 
                     <p style="text-indent: 0;">The stakes are as big as they come.<br> Participate in one of the most
                         sought after gaming events
                         in South India. <br> Three days of pure gaming. Nothing else.<br>
                         Unleash the gamer in you.<br>
-                    <h5>~Registrations opening soon!~</h5>
                     </p>
+                    <h5>~Registrations opening soon!~</h5>
+
                 </div>
             </div>
             <div id="leaders">
                 <div class="lumicon animated slideInLeft">
-                    <img src="assets/public/images/l1.png" height=75% width=75%/><br>
+                    <img src="/assets/public/images/l1.png" height=75% width=75%/><br>
                     <span style="color:#fff;">LEADERSMEET</span>
                 </div>
                 <div class=" animated zoomIn">
@@ -587,5 +611,6 @@
 
         </div> <!-- container1 -->
     </section> <!-- gradient bg -->
+
 </body>
 </html>

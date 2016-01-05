@@ -751,7 +751,6 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 #event-desc, #event-rules, #event-judge, #event-about {
-    line-height: 0;
     padding-top: 30px;
 }
 
@@ -816,5 +815,21 @@ input.form-control {
     color: #FFFFFF !important;
     background-color: #FF7518 !important;
 }
+.form-control-feedback {
+    line-height: 2;
+}
 
+i[data-bv-icon-for="institution"] {
+    margin-right: 40px;
+}
+
+i[data-bv-icon-for="institution"] {
+    margin-right: 40px;
+}
 /* squares ends*/
+
+#event-grid, #workshop-grid {
+    position: relative;
+    width: 95%;
+    overflow: hidden;
+}
