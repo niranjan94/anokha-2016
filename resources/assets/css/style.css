@@ -206,6 +206,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .custmodal-body {
+    text-align:center;
     position: absolute !important;
     height: 75%;
     width: 100%;
@@ -707,11 +708,11 @@ a, a:link, a:hover, a:visited, a:active {
     float: left;
     position: relative;
     width: 170px;
-    height: 85px;
+    height: 170px;
     margin: 10px;
     background-image: url('/assets/public/images/net-l.png');
     overflow: hidden;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
 }
 
