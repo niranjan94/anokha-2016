@@ -50,7 +50,7 @@ a, a:link, a:hover, a:visited, a:active {
     position: absolute;
     left: 50%;
     transform:translate(-50%,0%);
-    margin-top: -7%;    
+    margin-top: -7%;
     display: block;
     font-size: 50px;
     color: #ffffff;
@@ -78,24 +78,24 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .hvr-float {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .container1 {
@@ -690,7 +690,13 @@ a, a:link, a:hover, a:visited, a:active {
 
 .tab-content {
     overflow-y: scroll;
+    text-align: left !important;
 }
+
+#event-contact-tab, #event-details-tab {
+    text-align: center !important;
+}
+
 .tab-content p {
     padding: 10px;
 }
