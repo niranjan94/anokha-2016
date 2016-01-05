@@ -484,7 +484,7 @@ a, a:link, a:hover, a:visited, a:active {
     background: transparent;
     border-radius: 0;
     color: #ffffff;
-    width: 50%;
+    width: 45%;
     border: 1px solid #ffffff;
 }
 
@@ -547,7 +547,7 @@ a, a:link, a:hover, a:visited, a:active {
     -moz-border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
-    text-align: left;
+    text-align: center;
 }
 
 .form-bottom form textarea {
