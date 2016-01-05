@@ -16,6 +16,17 @@ function backWithoutStateChange() {
 }
 
 var voila = new Voila();
+
+function verifyActiveSession() {
+    voila.verifyActiveSession(function () {
+        $hiButton.fadeOut();
+        $loginRegisterButton.fadeIn();
+    });
+}
+
+verifyActiveSession();
+
+
 var user;
 
 var $loginRegisterButton = $(".login-register-button"),
@@ -197,6 +208,9 @@ $workshopsListModel.on('shown.bs.modal', function (e) {
 
 var $eventDateHolder,$eventContactsHolder;
 $(document).on('click', '.grid-item', function(){
+
+    verifyActiveSession();
+
     var event = $(this).data("event");
     var $modal;
 
@@ -259,13 +273,11 @@ $(document).on('click', '.grid-item', function(){
     $modal.modal("show");
 });
 
-
-
 $(".register-btn").click(function () {
     var eventId = $(this).data("event-id");
+    voila.loadSpinner();
     voila.registerForEvent(eventId);
 });
-
 
 $eventModal.on('hidden.bs.modal', function (e) {
     History.replaceState(null, "Events - Anokha 2016", "/events");
