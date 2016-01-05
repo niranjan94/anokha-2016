@@ -718,10 +718,10 @@ a, a:link, a:hover, a:visited, a:active {
 
 .sqcontent {
     position: absolute;
-    height: 86%; /* = 100% - 2*5% padding */
-    width: 86%; /* = 100% - 2*5% padding */
-    padding: 7%;
-
+    height: 90%; /* = 100% - 2*5% padding */
+    width: 90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    text-transform: capitalize;
 }
 
 .sqtable {
@@ -732,7 +732,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 .sqtable-cell {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: middle !important;
 }
 
 input.form-control {
