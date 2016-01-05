@@ -206,7 +206,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .custmodal-body {
-    text-align:left;
+    text-align:center;
     position: absolute !important;
     height: 75%;
     width: 100%;
