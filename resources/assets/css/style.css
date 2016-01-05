@@ -47,66 +47,15 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 /* bouncing arrow */
-
-@-webkit-keyframes bounce {
-    to {
-        -webkit-transform: translateY(-5px);
-    }
-}
-
-@-moz-keyframes bounce {
-    to {
-        -moz-transform: translateY(-5px);
-    }
-}
-
-@keyframes bounce {
-    to {
-        transform: translateY(-5px);
-    }
-}
-
-.down {
-    -webkit-animation: bounce 2.5s infinite alternate;
-    -moz-animation: bounce 2.5s infinite alternate;
-    -ms-animation: bounce 2.5s infinite alternate;
-    -o-animation: bounce 2.5s infinite alternate;
-    width: 32px;
-    height: 32px;
-    -webkit-backface-visibility: hidden;
-    bottom: 8vh;
+.down{
+    position: absolute;
     left: 50%;
-    position: absolute;
-}
-
-.down:before, .down:after {
-    background: #fff;
-    content: '';
+    transform:translate(-50%,0%);
+    margin-top: -7%;    
     display: block;
-    height: 45px;
-    position: absolute;
-    top: 0;
-    width: 3px;
+    font-size: 50px;
+    color: #ffffff;
 }
-
-.down:before {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    left: 0;
-}
-
-.down:after {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    left: 30px;
-}
-
 /* bouncing arrow ends*/
 
 .menuitems {
@@ -252,18 +201,16 @@ a, a:link, a:hover, a:visited, a:active {
     border-radius: 0 !important;
     box-shadow: none;
     background-image: url("/assets/public/images/light.png");
-    padding-left: 30px;
-    padding-right: 30px;
     overflow: hidden;
 }
 
 .custmodal-body {
     position: absolute !important;
     height: 75%;
-    width: 100%;
-    font-weight: 400;
+    width: 90%;
     overflow-y: hidden;
     overflow-x: hidden;
+    padding:30px;
 }
 
 #events, #workshops, #eventide, #retaliation, #expo, #leaders {
