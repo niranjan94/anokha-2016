@@ -328,11 +328,11 @@ a, a:link, a:hover, a:visited, a:active {
     width: 20%;
     padding: 10px;
     margin: 35px 15px 15px;
-    background: url("../assets/public/images/net-l.png");
+    background: url("/assets/public/images/net-l.png");
 }
 
 #retaliation img:hover {
-background: url("../assets/public/images/net.png");
+background: url("/assets/public/images/net.png");
 }
 
 #expo,#lumiere,#retaliation,#eventide,#leaders{
