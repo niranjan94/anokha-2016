@@ -144,7 +144,7 @@ voila.listEvents(function (events) {
 }, "event");
 
 voila.listDepartments(function(departments){
-    $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter active", "All Workshops", "*"));
+    $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter active", "All Workshops", null, "*"));
     $.each(departments, function( index, department ) {
         $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter", department.name, null, "department-" + department.id));
     });
