@@ -106,15 +106,19 @@ function getEventsListItemMarkup(event, typeClass) {
     return $item
 }
 
-function getEventsSortButtonMarkup(identifier, groupName, typeClass) {
-    return '<li class="hvr-sweep-to-right sorter '+identifier+'" data-sort-class="'+typeClass+'"><a>'+ groupName +'</a></li>';
+function getEventsSortButtonMarkup(identifier, groupName, groupDesc, typeClass) {
+    if(isUndefinedOrNull(groupDesc)) {
+            return '<li class="hvr-sweep-to-right sorter '+identifier+'" data-sort-class="'+typeClass+'"><a>'+ groupName +'</a></li>';
+    }
+    return '<li class="hvr-sweep-to-right sorter '+identifier+'" data-sort-class="'+typeClass+'" data-toggle="tooltip" data-placement="top" title="'+ groupDesc +'"><a>'+ groupName +'</a></li>';
 }
 
 voila.listClassifications(function(groups){
     $eventGroups.append(getEventsSortButtonMarkup("event-sorter active", "All Events", "*"));
     $.each(groups, function( index, group ) {
-        $eventGroups.append(getEventsSortButtonMarkup("event-sorter", group.name, "group-" + group.id));
+        $eventGroups.append(getEventsSortButtonMarkup("event-sorter", group.name, group.description, "group-" + group.id));
     });
+    
 }) ;
 
 voila.listEvents(function (events) {
@@ -141,9 +145,11 @@ voila.listEvents(function (events) {
 voila.listDepartments(function(departments){
     $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter active", "All Workshops", "*"));
     $.each(departments, function( index, department ) {
-        $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter", department.name, "department-" + department.id));
+        $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter", department.name, null, "department-" + department.id));
     });
 }) ;
+
+$('[data-toggle="tooltip"]').tooltip()
 
 voila.listEvents(function (events) {
     $.each(events, function( index, event ) {
