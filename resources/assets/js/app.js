@@ -110,15 +110,16 @@ function getEventsSortButtonMarkup(identifier, groupName, groupDesc, typeClass) 
     if(isUndefinedOrNull(groupDesc)) {
             return '<li class="hvr-sweep-to-right sorter '+identifier+'" data-sort-class="'+typeClass+'"><a>'+ groupName +'</a></li>';
     }
-    return '<li class="hvr-sweep-to-right sorter '+identifier+'" data-sort-class="'+typeClass+'" data-toggle="tooltip" data-placement="top" title="'+ groupDesc +'"><a>'+ groupName +'</a></li>';
+    return '<li class="hvr-sweep-to-right sorter '+identifier+'" data-sort-class="'+typeClass+'" data-toggle="tooltip" data-placement="bottom" title="'+ groupDesc +'"><a>'+ groupName +'</a></li>';
 }
 
 voila.listClassifications(function(groups){
-    $eventGroups.append(getEventsSortButtonMarkup("event-sorter active", "All Events", "*"));
+    $eventGroups.append(getEventsSortButtonMarkup("event-sorter active", "All Events",null, "*"));
     $.each(groups, function( index, group ) {
         $eventGroups.append(getEventsSortButtonMarkup("event-sorter", group.name, group.description, "group-" + group.id));
     });
     
+	$('[data-toggle="tooltip"]').tooltip();
 }) ;
 
 voila.listEvents(function (events) {
@@ -149,7 +150,6 @@ voila.listDepartments(function(departments){
     });
 }) ;
 
-$('[data-toggle="tooltip"]').tooltip()
 
 voila.listEvents(function (events) {
     $.each(events, function( index, event ) {
