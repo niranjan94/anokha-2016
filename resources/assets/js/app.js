@@ -255,25 +255,40 @@ $(document).on('click', '.grid-item', function(){
     $eventDateHolder = $modal.find("#event-date");
     $eventDateHolder.text("");
 
-    $.each(event.dates_timing, function( index, date ) {
-        if(date.from == "" || date.to == "") {
-            $eventDateHolder.append(index + "<br>")
-        } else {
-            $eventDateHolder.append(index + " - " + date.from + " to " + date.to + "<br>")
-        }
-    });
+    if(event.dates_timing.length > 0) {
+        $.each(event.dates_timing, function( index, date ) {
+            if(date.from == "" || date.to == "") {
+                $eventDateHolder.append(index + "<br>")
+            } else {
+                $eventDateHolder.append(index + " - " + date.from + " to " + date.to + "<br>")
+            }
+        });
+    } else {
+        $eventDateHolder.text("(to be updated)");
+    }
 
-    $modal.find("#event-location").text(event.venue);
+
+    if(event.venue == "" || event.venue == " " || event.venue == null) {
+        $modal.find("#event-location").text("(to be updated)");
+    } else {
+        $modal.find("#event-location").text(event.venue);
+    }
+
     $modal.find("#event-fee").text(event.human_readable_fee);
 
     $eventContactsHolder  = $modal.find("#event-contacts");
     $eventContactsHolder.text("");
-    $.each(event.contact, function( index, contact ) {
-        if(contact.name != "" && contact.number != "") {
-            var $contactItem = $("<li>"+contact.name + " - " +  contact.number+"</li>");
-            $eventContactsHolder.append($contactItem)
-        }
-    });
+
+    if(event.contact.length > 0) {
+        $.each(event.contact, function( index, contact ) {
+            if(contact.name != "" && contact.number != "") {
+                var $contactItem = $("<li>"+contact.name + " - " +  contact.number+"</li>");
+                $eventContactsHolder.append($contactItem)
+            }
+        });
+    } else {
+        $eventContactsHolder.text("anokha@cb.amrita.edu");
+    }
 
     $modal.find(".tab-content").niceScroll({
         cursorwidth:"10px",
