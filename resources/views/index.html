@@ -320,7 +320,9 @@
                                                                                     height=20%></a>
         </div>
 
-        <div class="down animated bounce"><i class="fa fa-angle-down"></i></div> <!--down arrow -->
+        <div class="down animated bounce" onclick="EPPZScrollTo.scrollVerticalToElementById('events-link', 0);" style="cursor: pointer">
+            <i class="fa fa-angle-down"></i>
+        </div> <!--down arrow -->
         <div class="menuitems">
             <div class="hvr-float" id="events-link" data-toggle="modal" data-target="#events">Events</div>
             <div class="hvr-float" id="workshops-link" data-toggle="modal" data-target="#ws">Workshops</div>
@@ -332,7 +334,7 @@
 
         </div>
 
-        <div id="events" class="custmodal modal animated fadeIn" tabindex="-1" role="dialog"
+        <div id="events" class="custmodal modal animated fadeIn fade" tabindex="-1" role="dialog"
              aria-labelledby="windowTitleLabel">
             <div class="custmodal-dialog modal-dialog">
                 <div class="custmodal-content modal-content">
@@ -353,26 +355,10 @@
             </div>
         </div>
 
-        <div id="ws" class="custmodal modal animated fadeIn" tabindex="-1" role="dialog"
+        <div id="ws" class="custmodal modal animated fadeIn fade" tabindex="-1" role="dialog"
              aria-labelledby="windowTitleLabel">
             <div class="custmodal-dialog modal-dialog">
                 <div class="custmodal-content modal-content">
-                    <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
-                    <br><br><br>
-
-                    <h3 style="font-family: Titillium Web, serif; color:#FF7518 !important; text-transform: uppercase; font-size:40px;">
-                        Workshops</h3>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h2 style="font-family: Titillium Web, serif; font-weight: 100; color:#b2b2b2 !important;font-size:60px;">
-                        Coming Soon</h2>
-
-                </div>
-                <div class="custmodal-content modal-content" style="display: none">
                     <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
                     <br><br><br>
 
@@ -390,7 +376,7 @@
             </div>
         </div>
 
-        <div id="event-modal" class="custmodal modal" tabindex="-1" role="dialog">
+        <div id="event-modal" class="custmodal modal fade" tabindex="-1" role="dialog">
             <div class="custmodal-dialog modal-dialog">
                 <div class="custmodal-content modal-content">
                     <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
@@ -407,46 +393,46 @@
                                 <li><a href="#event-judge-tab" data-toggle="tab">Judgement Criteria</a></li>
                                 <li><a href="#event-contact-tab" data-toggle="tab">Contact</a></li>
                             </ul>
-                            <div class="tab-content" style:"width:70%;">
-                                <div class="tab-pane active" id="event-description-tab">
-                                    <p id="event-desc"></p>
-                                </div>
-                                <div class="tab-pane" id="event-details-tab"><br>
-
-                                    <strong>Event type: </strong><p id="event-type"></p>
-
-                                    <strong>Prizes Worth: </strong><p id="event-prize"></p>
-
-                                    <strong>When? </strong><p id="event-date"></p>
-
-                                    <strong>Where? </strong><p id="event-location"></p>
-
-                                    <strong>Registration Fee: </strong><p id="event-fee"></p>
-                                </div>
-                                <div class="tab-pane" id="event-rules-tab">
-                                    <p id="event-rules"></p>
-                                </div>
-                                <div class="tab-pane" id="event-judge-tab">
-                                    <p id="event-judge"></p>
-                                </div>
-                                <div class="tab-pane" id="event-contact-tab" style="padding-top: 30px;">
-                                    <p>Please note that all details are subject to change without prior notice.<br>
-                                    For more details regarding this event, you can contact the event manager(s)</p>
-                                    <ul id="event-contacts">
-
-                                    </ul>
-                                </div>
+                            <div class="tab-content" style="width:70%; margin-left: auto; margin-right: auto;">
+                            <div class="tab-pane active" id="event-description-tab">
+                                <p id="event-desc"></p>
                             </div>
-                            <a id="cust-btn" class="register-btn btn btn-primary">Register</a>
-                            <a id="cust-btn" class="login-to-register-btn btn btn-primary disabled">Please Login to Register</a>
-                        </div>
+                            <div class="tab-pane" id="event-details-tab"><br>
 
+                                <strong>Event type: </strong><p id="event-type"></p>
+
+                                <strong>Prizes Worth: </strong><p id="event-prize"></p>
+
+                                <strong>When? </strong><p id="event-date"></p>
+
+                                <strong>Where? </strong><p id="event-location"></p>
+
+                                <strong>Registration Fee: </strong><p id="event-fee"></p>
+                            </div>
+                            <div class="tab-pane" id="event-rules-tab">
+                                <p id="event-rules"></p>
+                            </div>
+                            <div class="tab-pane" id="event-judge-tab">
+                                <p id="event-judge"></p>
+                            </div>
+                            <div class="tab-pane" id="event-contact-tab" style="padding-top: 30px;">
+                                <p>Please note that all details are subject to change without prior notice.<br>
+                                    For more details regarding this event, you can contact the event manager(s)</p>
+                                <ul id="event-contacts">
+
+                                </ul>
+                            </div>
+                        </div>
+                        <a id="cust-btn" class="register-btn btn btn-primary">Register</a>
+                        <a id="cust-btn" class="login-to-register-btn btn btn-primary disabled">Please Login to Register</a>
                     </div>
+
                 </div>
             </div>
         </div>
+        </div>
 
-        <div id="workshop-modal" class="custmodal modal" tabindex="-1" role="dialog">
+        <div id="workshop-modal" class="custmodal modal fade" tabindex="-1" role="dialog">
             <div class="custmodal-dialog modal-dialog">
                 <div class="custmodal-content modal-content">
                     <button type="button" class="close" data-dismiss="modal" style="margin:20px;">&times;</button>
@@ -463,39 +449,39 @@
                                 <li><a href="#workshop-details-tab" data-toggle="tab">Details</a></li>
                                 <li><a href="#workshop-contact-tab" data-toggle="tab">Contact</a></li>
                             </ul>
-                            <div class="tab-content"  style:"width:70%;">
-                                <div class="tab-pane active" id="workshop-description-tab">
-                                    <p id="event-desc"></p>
-                                </div>
-                                <div class="tab-pane" id="workshop-about-tab">
-                                    <p id="event-about"></p>
-                                </div>
-                                <div class="tab-pane" id="workshop-details-tab"><br>
-
-                                    <strong>Workshop type: </strong><p id="event-type"></p>
-
-                                    <strong>When? </strong><p id="event-date"></p>
-
-                                    <strong>Where? </strong><p id="event-location"></p>
-
-                                    <strong>Registration Fee: </strong><p id="event-fee"></p>
-                                </div>
-
-                                <div class="tab-pane" id="workshop-contact-tab" style="padding-top: 30px; text-align:center;">
-                                    <p>Please note that all details are subject to change without prior notice.<br>
-                                    For more details regarding this event, you can contact the event manager(s)</p>
-                                    <ul id="event-contacts">
-
-                                    </ul>
-                                </div>
-
+                            <div class="tab-content"  style="width:70%; margin-left: auto; margin-right: auto;">
+                            <div class="tab-pane active" id="workshop-description-tab">
+                                <p id="event-desc"></p>
                             </div>
+                            <div class="tab-pane" id="workshop-about-tab">
+                                <p id="event-about"></p>
+                            </div>
+                            <div class="tab-pane" id="workshop-details-tab"><br>
+
+                                <strong>Workshop type: </strong><p id="event-type"></p>
+
+                                <strong>When? </strong><p id="event-date"></p>
+
+                                <strong>Where? </strong><p id="event-location"></p>
+
+                                <strong>Registration Fee: </strong><p id="event-fee"></p>
+                            </div>
+
+                            <div class="tab-pane" id="workshop-contact-tab" style="padding-top: 30px; text-align:center;">
+                                <p>Please note that all details are subject to change without prior notice.<br>
+                                    For more details regarding this event, you can contact the event manager(s)</p>
+                                <ul id="event-contacts">
+
+                                </ul>
+                            </div>
+
                         </div>
-                        <a id="cust-btn" class="register-btn btn btn-primary">Register</a>
-                        <a id="cust-btn" class="login-to-register-btn btn btn-primary disabled">Please Login to Register</a>
                     </div>
+                    <a id="cust-btn" class="register-btn btn btn-primary">Register</a>
+                    <a id="cust-btn" class="login-to-register-btn btn btn-primary disabled">Please Login to Register</a>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="container1">
