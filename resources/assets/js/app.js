@@ -254,8 +254,7 @@ $(document).on('click', '.grid-item', function(){
 
     $eventDateHolder = $modal.find("#event-date");
     $eventDateHolder.text("");
-
-    if(event.dates_timing.length > 0) {
+    if(Object.keys(event.dates_timing).length > 0) {
         $.each(event.dates_timing, function( index, date ) {
             if(date.from == "" || date.to == "") {
                 $eventDateHolder.append(index + "<br>")
@@ -266,7 +265,6 @@ $(document).on('click', '.grid-item', function(){
     } else {
         $eventDateHolder.text("(to be updated)");
     }
-
 
     if(event.venue == "" || event.venue == " " || event.venue == null) {
         $modal.find("#event-location").text("(to be updated)");
@@ -279,7 +277,7 @@ $(document).on('click', '.grid-item', function(){
     $eventContactsHolder  = $modal.find("#event-contacts");
     $eventContactsHolder.text("");
 
-    if(event.contact.length > 0) {
+    if(Object.keys(event.contact).length > 0) {
         $.each(event.contact, function( index, contact ) {
             if(contact.name != "" && contact.number != "") {
                 var $contactItem = $("<li>"+contact.name + " - " +  contact.number+"</li>");
@@ -331,7 +329,16 @@ var stateChangeHandler = function(){
     ga('send', 'pageview');
 
     if(!lock) {
-        var path = new URI(window.location.href).pathname();
+        var uri = new URI(window.location.href);
+        var path = uri.pathname();
+
+        if(uri.hasQuery("registration") === true) {
+            if(uri.hasQuery("registration", "success") === true) {
+                createSnackbar("The registration for the event/workshop was successful.", null, null, 6000)
+            } else if(uri.hasQuery("registration", "failed") === true) {
+                createSnackbar("The registration for the event/workshop has failed. You have not been charged.", null, null, 6000)
+            }
+        }
         var splitPath = path.split("/");
         if(path.startsWith("/event/")) {
             $(".event-identifier-"+splitPath[splitPath.length-1]).trigger("click");
