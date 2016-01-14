@@ -231,16 +231,24 @@ $(document).on('click', '.grid-item', function(){
     if(event.type == "event") {
         $modal = $eventModal;
         $modal.find("#event-prize").text("Rs. "+event.prize);
-        $modal.find("#event-rules").html(event.rules);
-        $modal.find("#event-judge").html(event.judgement_criteria);
+        $modal.find("#event-rules").html(event.rules).linkify({
+            target: "_blank"
+        });
+        $modal.find("#event-judge").html(event.judgement_criteria).linkify({
+            target: "_blank"
+        });
 
     } else {
         $modal = $workshopModal;
-        $modal.find("#event-about").html(event.explanation);
+        $modal.find("#event-about").html(event.explanation).linkify({
+            target: "_blank"
+        });
     }
 
     $modal.find(".title").text(event.name);
-    $modal.find("#event-desc").html(event.description);
+    $modal.find("#event-desc").html(event.description).linkify({
+        target: "_blank"
+    });
 
     if(event.join_type == "individual") {
         $modal.find("#event-type").text("Individual");
