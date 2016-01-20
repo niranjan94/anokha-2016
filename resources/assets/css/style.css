@@ -24,7 +24,7 @@ ul {
     list-style-type: none !important;
 }
 
-.gradientbg {
+body {
     background-image: -moz-linear-gradient(180deg,#1ac1f2,#46e28c);
     background-image: -webkit-linear-gradient(180deg,#1ac1f2,#46e28c);
     background-image: linear-gradient(180deg,#1ac1f2,#46e28c);
@@ -348,12 +348,8 @@ background: url("/assets/public/images/net.png");
     margin-top: 14%;
     margin-left: 50%;
     transform: translate(-50%, -14%);
-    height: 50%;
     width: 50%;
-    min-height: 30%;
     min-width: 30%;
-    max-height: 70%;
-    max-width: 70%;
     margin-bottom: 16.67%;
     cursor: pointer;
 }
@@ -374,7 +370,7 @@ background: url("/assets/public/images/net.png");
     font-family: Titillium Web, serif;
     display: block;
     position: fixed !important;
-    margin-top: 5px;
+    margin-top: 10px;
     left: 88%;
     transform: translate(-50%, 0);
     text-align: right;
@@ -383,6 +379,7 @@ background: url("/assets/public/images/net.png");
     padding: 2px 10px 2px 10px;
     z-index:10;
 }
+
 
 .hvr-sweep-to-right {
     display: inline-block;
@@ -773,4 +770,8 @@ i[data-bv-icon-for="institution"] {
     overflow: hidden;
     margin-top: 20px;
     margin-left:auto; margin-right:auto;
+}
+
+span.standout {
+    color:#FF7518 !important;
 }

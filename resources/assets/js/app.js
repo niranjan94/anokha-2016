@@ -17,6 +17,11 @@ function backWithoutStateChange() {
 }
 
 $(function() {
+
+    $('#fullpage').fullpage({
+        anchors:['', 'explore']
+    });
+
     var voila = new Voila();
 
     function verifyActiveSession() {
@@ -28,27 +33,51 @@ $(function() {
 
     verifyActiveSession();
 
-
     var user;
 
     var $loginRegisterButton = $(".login-register-button"),
         $hiButton = $(".hi-button");
+
+
     if(voila.isLoggedIn()) {
         user = voila.getUser();
         $loginRegisterButton.fadeOut();
-        $hiButton.find(".name").text(user.name);
+        $(".user-name").text(user.name);
         $hiButton.fadeIn();
+        $(".current-mobile").text(user.mobile);
+        $(".current-university").text(user.college.name);
+        $(".current-city").text(user.city.name);
     }
 
-    $(".login-form").bindLogin("/", function (user) {
+    var $loginForm = $(".login-form");
+    $loginForm.bindLogin("/", function (user) {
         $loginRegisterButton.fadeOut();
-        $hiButton.find(".name").text(user.name);
+        $(".user-name").text(user.name);
         $hiButton.fadeIn();
         $("#logreg").modal("hide");
+        $loginForm.unlockAndResetForm();
     });
 
-    $(".signup-form").bindRegister("/login", function () {
+    var $signupForm = $(".signup-form");
+    $signupForm.bindRegister("/login", function () {
         $('.tab').trigger("click");
+        $signupForm.unlockAndResetForm();
+    });
+
+    var $resetForm = $(".reset-form");
+    $resetForm.bindReset(function () {
+        $resetForm.unlockAndResetForm();
+    });
+
+    var $changePasswordForm = $(".password-change-form");
+    $changePasswordForm.bindChangePassword(function() {
+        $changePasswordForm.unlockAndResetForm();
+    });
+
+    $(".logout").click(function () {
+        voila.closeSession();
+        $hiButton.fadeOut();
+        $loginRegisterButton.fadeIn();
     });
 
     var $eventGroups = $("#event-groups");
