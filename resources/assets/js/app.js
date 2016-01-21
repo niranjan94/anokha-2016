@@ -18,6 +18,18 @@ function backWithoutStateChange() {
 
 $(function() {
 
+    var $eventGroups = $("#event-groups");
+    var $workshopDepartments = $("#workshop-departments");
+
+    var $eventGrid = $("#event-grid");
+    var $workshopGrid = $("#workshop-grid");
+
+    var $eventModal = $("#event-modal");
+    var $workshopModal = $("#workshop-modal");
+
+    var $eventsListModel = $("#events");
+    var $workshopsListModel = $("#ws");
+    
     $('#fullpage').fullpage({
         anchors:['', 'explore']
     });
@@ -56,6 +68,12 @@ $(function() {
         $hiButton.fadeIn();
         $("#logreg").modal("hide");
         $loginForm.unlockAndResetForm();
+        
+        $eventModal.find(".register-btn").show();
+        $eventModal.find(".login-to-register-btn").hide();
+        
+        $workshopModal.find(".register-btn").show();
+        $workshopModal.find(".login-to-register-btn").hide();
     });
 
     var $signupForm = $(".signup-form");
@@ -80,17 +98,7 @@ $(function() {
         $loginRegisterButton.fadeIn();
     });
 
-    var $eventGroups = $("#event-groups");
-    var $workshopDepartments = $("#workshop-departments");
-
-    var $eventGrid = $("#event-grid");
-    var $workshopGrid = $("#workshop-grid");
-
-    var $eventModal = $("#event-modal");
-    var $workshopModal = $("#workshop-modal");
-
-    var $eventsListModel = $("#events");
-    var $workshopsListModel = $("#ws");
+    
 
     $eventModal.find(".tab-content").css("height", $(window).height() * 0.58 + "px");
     $workshopModal.find(".tab-content").css("height", $(window).height() * 0.58 + "px");
@@ -340,9 +348,9 @@ $(function() {
             cursorborder: "none"
         });
 
+        $modal.find(".register-btn").data("event-id", event.id);
 
         if(voila.isLoggedIn()) {
-            $modal.find(".register-btn").data("event-id", event.id);
             $modal.find(".register-btn").show();
             $modal.find(".login-to-register-btn").hide();
         } else {
