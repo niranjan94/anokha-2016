@@ -293,17 +293,22 @@ $(function() {
 
         $eventDateHolder = $modal.find("#event-date");
         $eventDateHolder.text("");
-        if(Object.keys(event.dates_timing).length > 0) {
-            $.each(event.dates_timing, function( index, date ) {
-                if(date.from == "" || date.to == "") {
-                    $eventDateHolder.append(index + "<br>")
-                } else {
-                    $eventDateHolder.append(index + " - " + date.from + " to " + date.to + "<br>")
-                }
-            });
+        if(event.id == 9) {
+            $eventDateHolder.text("13/02/2016")
         } else {
-            $eventDateHolder.text("(to be updated)");
+            if(Object.keys(event.dates_timing).length > 0) {
+                $.each(event.dates_timing, function( index, date ) {
+                    if(date.from == "" || date.to == "") {
+                        $eventDateHolder.append(index + "<br>")
+                    } else {
+                        $eventDateHolder.append(index + " - " + date.from + " to " + date.to + "<br>")
+                    }
+                });
+            } else {
+                $eventDateHolder.text("(to be updated)");
+            }
         }
+        
 
         if(event.venue == "" || event.venue == " " || event.venue == null) {
             $modal.find("#event-location").text("(to be updated)");
