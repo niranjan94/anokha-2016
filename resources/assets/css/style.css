@@ -10,7 +10,7 @@ html {
     -moz-border-radius: 0 !important;
     -ms-border-radius: 0 !important;
     -o-border-radius: 0 !important;
-    border-radius: 0 !important;
+    border-radius: 0 !important;lu
 
     box-shadow: none !important;
 }
@@ -264,7 +264,7 @@ a, a:link, a:hover, a:visited, a:active {
     border-bottom: 2px solid #fb5e00;
 }
 
-#leaders, #lumiere, #eventide p, #retaliation {
+#leaders, #eventide p, #retaliation {
     padding: 5px 45px 5px 45px;
     font-family: Titillium Web, serif;
     font-size: 18px !important;
@@ -299,7 +299,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 .lumicon {
     float: left;
-    margin-left: -41%;
+    margin-left: -31%;
     margin-top: 18%;
     text-align: center;
     line-height: 220%;
@@ -318,7 +318,7 @@ a, a:link, a:hover, a:visited, a:active {
     line-height: 100%;
 }
 
-#lumiere p, .about p {
+.about p {
     padding: 5px 45px 5px 45px;
     text-align: justify;
 }
@@ -588,8 +588,8 @@ background: url("/assets/public/images/net.png");
 }
 
 .about img {
-    height: 45%;
-    width: 45%;
+    height: 15%;
+    width: 15%;
     ms-interpolation-mode: bicubic;
 }
 
