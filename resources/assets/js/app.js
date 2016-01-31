@@ -132,16 +132,31 @@ $(function() {
     });
 
     function getEventsListItemMarkup(event, typeClass) {
-        var $item = $('<div class="square grid-item hvr-sweep-to-right '+typeClass+' event-identifier-'+event.id+'" data-category="' + typeClass + '">' +
-            '<div class="sqcontent">'+
-            '<div class="sqtable">'+
-            '<div class="sqtable-cell">'+
-            event.name +
-            '</div>'+
-            '</div>'+
-            '</div>'+
-            '</div>');
+        var $item;
+        if(event.id == 80) {
+            $item = $('<div class="square grid-item hidden hvr-sweep-to-right '+typeClass+' event-identifier-'+event.id+'" data-category="' + typeClass + '">' +
+                '<div class="sqcontent">'+
+                '<div class="sqtable">'+
+                '<div class="sqtable-cell">'+
+                event.name +
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '</div>');
+        } else {
+            $item = $('<div class="square grid-item shown hvr-sweep-to-right '+typeClass+' event-identifier-'+event.id+'" data-category="' + typeClass + '">' +
+                '<div class="sqcontent">'+
+                '<div class="sqtable">'+
+                '<div class="sqtable-cell">'+
+                event.name +
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '</div>');
+        }
+
         $item.data("event", event);
+
         return $item
     }
 
@@ -153,7 +168,7 @@ $(function() {
     }
 
     voila.listClassifications(function(groups){
-        $eventGroups.append(getEventsSortButtonMarkup("event-sorter active", "All Events",null, "*"));
+        $eventGroups.append(getEventsSortButtonMarkup("event-sorter active", "All Events",null, "shown"));
         $.each(groups, function( index, group ) {
             $eventGroups.append(getEventsSortButtonMarkup("event-sorter", group.name, group.description, "group-" + group.id));
         });
@@ -168,7 +183,7 @@ $(function() {
 
         $eventGrid.isotope({
             itemSelector: '.grid-item',
-            filter: '*',
+            filter: '.shown',
             layoutMode: 'fitRows',
             fitRows: {
                 gutter: 1
@@ -183,7 +198,7 @@ $(function() {
     }, "event");
 
     voila.listDepartments(function(departments){
-        $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter active", "All Workshops", null, "*"));
+        $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter active", "All Workshops", null, "shown"));
         $.each(departments, function( index, department ) {
             $workshopDepartments.append(getEventsSortButtonMarkup("event-sorter", department.name, null, "department-" + department.id));
         });
@@ -197,7 +212,7 @@ $(function() {
 
         $workshopGrid.isotope({
             itemSelector: '.grid-item',
-            filter: '*',
+            filter: '.shown',
             layoutMode: 'fitRows',
             fitRows: {
                 gutter: 1
@@ -239,7 +254,7 @@ $(function() {
 
     $eventsListModel.on('shown.bs.modal', function (e) {
         $eventsListModel.find(".event-sorter[data-sort-class='*']").trigger("click");
-        $eventGrid.isotope({ filter: "*" });
+        $eventGrid.isotope({ filter: ".shown" });
         pushWithoutStateChange(null, "Events - Anokha 2016", "/events");
         $eventGrid.getNiceScroll().resize();
 
@@ -249,7 +264,7 @@ $(function() {
 
     $workshopsListModel.on('shown.bs.modal', function (e) {
         $workshopsListModel.find(".event-sorter[data-sort-class='*']").trigger("click");
-        $workshopGrid.isotope({ filter: "*" });
+        $workshopGrid.isotope({ filter: ".shown" });
         pushWithoutStateChange(null, "Workshops - Anokha 2016", "/workshops");
         $workshopGrid.getNiceScroll().resize();
 
