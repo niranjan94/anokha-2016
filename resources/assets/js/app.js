@@ -134,7 +134,7 @@ $(function() {
     function getEventsListItemMarkup(event, typeClass) {
         var $item;
         if(event.id == 80) {
-            $item = $('<div class="square grid-item hidden hvr-sweep-to-right '+typeClass+' event-identifier-'+event.id+'" data-category="' + typeClass + '">' +
+            $item = $('<div class="square grid-item hidden hvr-sweep-to-right event-identifier-'+event.id+'" >' +
                 '<div class="sqcontent">'+
                 '<div class="sqtable">'+
                 '<div class="sqtable-cell">'+
