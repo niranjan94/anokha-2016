@@ -31,7 +31,7 @@ var main = function () {
     });
 
     $('#menu3').click(function () {
-        $('#events,#lumiere,#workshop,#retaliation,#expo,#leaders').css({
+        $('#events,#lumiere,#workshop,#retaliation,#ideate,#leaders').css({
             display: 'none'
         });
         $('#eventide').css({
@@ -46,7 +46,7 @@ var main = function () {
     });
 
     $('#menu4').click(function () {
-        $('#events,#workshops,#eventide,#retaliation,#expo,#leaders').css({
+        $('#events,#workshops,#eventide,#retaliation,#ideate,#leaders').css({
             display: 'none'
         });
         $('#lumiere').css({
@@ -64,7 +64,7 @@ var main = function () {
         $('#events,#lumiere,#eventide,#retaliation,#workshops,#leaders').css({
             display: 'none'
         });
-        $('#expo').css({
+        $('#ideate').css({
             display: 'block'
         });
         $('#menu5').css({
@@ -76,7 +76,7 @@ var main = function () {
     });
 
     $('#menu6').click(function () {
-        $('#events,#lumiere,#eventide,#workshops,#expo,#leaders').css({
+        $('#events,#lumiere,#eventide,#workshops,#ideate,#leaders').css({
             display: 'none'
         });
         $('#retaliation').css({
@@ -91,7 +91,7 @@ var main = function () {
     });
 
     $('#menu7').click(function () {
-        $('#events,#lumiere,#eventide,#retaliation,#workshops,#expo').css({
+        $('#events,#lumiere,#eventide,#retaliation,#workshops,#ideate').css({
             display: 'none'
         });
         $('#leaders').css({

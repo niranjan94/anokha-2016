@@ -10,8 +10,7 @@ html {
     -moz-border-radius: 0 !important;
     -ms-border-radius: 0 !important;
     -o-border-radius: 0 !important;
-    border-radius: 0 !important;lu
-
+    border-radius: 0 !important;
     box-shadow: none !important;
 }
 
@@ -213,7 +212,7 @@ a, a:link, a:hover, a:visited, a:active {
     overflow-x: hidden;
 }
 
-#events, #workshops, #eventide, #retaliation, #expo, #leaders {
+#events, #workshops, #eventide, #retaliation, #ideate, #leaders {
     display: none;
 }
 
@@ -264,7 +263,7 @@ a, a:link, a:hover, a:visited, a:active {
     border-bottom: 2px solid #fb5e00;
 }
 
-#leaders, #eventide p, #retaliation {
+#leaders, #ideate, #eventide p, #retaliation {
     padding: 5px 45px 5px 45px;
     font-family: Titillium Web, serif;
     font-size: 18px !important;
@@ -291,9 +290,10 @@ a, a:link, a:hover, a:visited, a:active {
 
 .expoicon {
     float: left;
-    margin-left: -33%;
+    margin-left: -40%;
     margin-top: 13%;
     text-align: center;
+    font-size: 25px;
     line-height: 0;
 }
 
@@ -345,7 +345,7 @@ a, a:link, a:hover, a:visited, a:active {
 background: url("/assets/public/images/net.png");
 }
 
-#expo,#lumiere,#retaliation,#eventide,#leaders{
+#ideate,#lumiere,#retaliation,#eventide,#leaders{
     background: rgba(20, 0, 70, 0.07);
     height: 100%;
 }

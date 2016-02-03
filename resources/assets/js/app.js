@@ -380,7 +380,7 @@ $(function() {
         var eventId = $(this).data("event-id");
 
         if(eventId == "24") {
-            location.href = "http://ideate.amritatbi.com";
+            location.href = "http://amritatbi.com/ideate/#team";
         } else {
             voila.loadSpinner();
             voila.registerForEvent(eventId);
