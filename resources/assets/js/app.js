@@ -378,8 +378,13 @@ $(function() {
 
     $(".register-btn").click(function () {
         var eventId = $(this).data("event-id");
-        voila.loadSpinner();
-        voila.registerForEvent(eventId);
+
+        if(eventId == "24") {
+            location.href = "http://ideate.amritatbi.com";
+        } else {
+            voila.loadSpinner();
+            voila.registerForEvent(eventId);
+        }
     });
 
     $eventModal.on('hidden.bs.modal', function (e) {
