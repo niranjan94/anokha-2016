@@ -365,6 +365,8 @@ $(function() {
 
         $modal.find(".register-btn").data("event-id", event.id);
 
+        $modal.find(".rbtn").show();
+
         if(voila.isLoggedIn()) {
             $modal.find(".register-btn").show();
             $modal.find(".login-to-register-btn").hide();
@@ -373,6 +375,9 @@ $(function() {
             $modal.find(".login-to-register-btn").show();
         }
 
+        if(event.id == 24) {
+            $modal.find(".rbtn").hide();
+        }
         $modal.modal("show");
     });
 
